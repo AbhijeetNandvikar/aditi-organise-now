@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+<script>
+    // Initialize Firebase with your project config
+    const firebaseConfig = {
+        apiKey: "AIzaSyCWt8iIhsImR44K9Wg9_YwThJg7g5GwutQ",
+        authDomain: "organise-now.firebaseapp.com",
+        projectId: "organise-now",
+        storageBucket: "organise-now.appspot.com",
+        messagingSenderId: "407226849992",
+        appId: "1:407226849992:web:719775d58fcc32438023fd",
+        measurementId: "G-BC21E4M56Q"
+      };
+
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script src="index.js"></script>
+
+  </head>
+  <body>
+    <div class="login-container" id="login-container">
+      <h2>Login</h2>
+      <input
+        type="email"
+        id="email-input"
+        placeholder="Enter your email"
+        class="text-field"
+      />
+      <br />
+      <input
+        type="password"
+        id="login-password"
+        name="login-password"
+        placeholder="Password"
+        class="text-field"
+      />
+      <br />
+      <button class="button-style" id="login-button" onclick="loginWithEmail()">Login with email</button>
+      <br />
+      <br />
+      <button class="button-style" id="login-button" onclick="loginWithGoogle()">Login with google</button>
+      <br />
+      <br />
+      <div class="cta-link">Don't have an account?</div>
+      <a href="http://127.0.0.1:5500/register.html" id="register-link" class="register-link">Register here</a>
+    </div>
+    
+    
+    </div>
+
+  </body>
+</html>

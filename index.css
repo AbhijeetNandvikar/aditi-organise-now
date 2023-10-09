@@ -1,0 +1,48 @@
+body {
+  background-color: #4ca74ca6;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-container,
+.register-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 2rem 4rem;
+  text-align: center;
+  color: white;
+}
+
+.text-field {
+  margin: 20px, 0px;
+  padding: 10px 30px;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: rgb(17, 78, 17);
+  margin-bottom: 20px;
+}
+
+#login-button,
+#register-button {
+  padding: 5px 15px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+}
+
+.login-button:hover,
+.register-button:hover {
+  background-color: rgb(17, 78, 17);
+  color: white;
+}
+
+.register-link,
+.login-link {
+  color: white;
+  text-decoration: none;
+}

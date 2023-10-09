@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script>
+      // Initialize Firebase with your project config
+      const firebaseConfig = {
+        apiKey: "AIzaSyCWt8iIhsImR44K9Wg9_YwThJg7g5GwutQ",
+        authDomain: "organise-now.firebaseapp.com",
+        projectId: "organise-now",
+        storageBucket: "organise-now.appspot.com",
+        messagingSenderId: "407226849992",
+        appId: "1:407226849992:web:719775d58fcc32438023fd",
+        measurementId: "G-BC21E4M56Q",
+      };
+
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    Welcome to Organise Now!
+    <button id="load-chart-button" onclick="renderChart()">Render Chart</button>
+    <canvas id="my-chart" width="400" height="400"></canvas>
+    <button onclick="logout()">Logout</button>
+  </body>
+</html>
